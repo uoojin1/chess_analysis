@@ -25,14 +25,19 @@ VALID_FIELDS = [
 
 def read_single_game(games):
     game = []
+    found_game = False
     while True:
         line = games.readline()
         if not line:
             break
         game.append(line)
         if line[:2] == '1.':
+            found_game = True
             break
-    return game
+    if found_game == True:
+        return game
+    
+    return None
 
         
 
@@ -92,7 +97,7 @@ def main(file_path, file_name):
     file_name_without_ext = file_name.split('.')[0]
 
     # export the dataframe as a 
-    dataframe.to_csv(file_path + '/' + file_name_without_ext + '.csv')
+    dataframe.to_csv(file_path + '/' + file_name_without_ext + '.csv', index=False)
            
 if __name__ == "__main__":
     # first argument should be the path of the pgn file to process
