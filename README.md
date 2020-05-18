@@ -7,7 +7,7 @@ Chess is a strategic game where the goal of the game is to take down the opponen
 Because each player gets to move a single piece per turn, it is important to make meaningful moves to avoid wasting turns.
 
 Although there are some guidelines that define what a good vs. bad move is, there are vast amounts of possible game states
-in chess which make it difficult to figure out what move is best in a certain situation.
+in chess which make it difficult to figure out what move is best in the given situation.
 
 So rather than trying to figure out what move is the best for the current game state, I wanted to understand what types of moves generally increase the winning probability.
 
@@ -25,9 +25,13 @@ The data was collected from https://www.ficsgames.org/download.html, where you c
 
 I created a custom parser to generate a csv file from the pgn file so that I can easily use them in the python notebook for some visualization and analysis.
 
+<<<<<<< HEAD
 ---
 
 ***Here are some of the ideas that I wanted to verify with the statistical data.***
+=======
+***Here are some of the ideas that I wanted to verify with statistics.***
+>>>>>>> bda01a752f3087cded75c919ea7aa38d4690921e
 
 - Does moving certain types of pieces more often than others affect the winning rate?
     - is it better to move Queen early?
@@ -52,8 +56,8 @@ I created a custom parser to generate a csv file from the pgn file so that I can
 
 ***Result***
 
-By going through this entire process I learned a few things about chess that I didn't know before.
+By going through this entire process, I learned a few things about chess that I didn't know before.
 
-- too many pawn movements in the early game is not beneficial in the long run because it decreases the defense of your castle. Thus, try to work with 2~3 pawns in the beginning to support the fight for the center.
-- it is better to castle early in the game, but it is better to castle later than your opponent. This is beacuse you can react to opponent's castling (either King or Queen side). By being able to choose the side of your defense, you can make the opponent to waste few moves to restructure their attack. Also, activating your Rook early in the game will add a significant strength to your attack.
+- too many pawn movements in the early game is not beneficial in the long run because it decreases the defense of your castle. Thus, try to work with 2~3 central pawns in the beginning to support the fight for the center.
+- it is better to castle early in the game, but it is better to castle later than your opponent. This is beacuse you can react to opponent's castling (either King or Queen side). By being able to choose the side of your defense, you can make the opponent to waste few moves by forcing the to restructure their attack. Also, activating your Rook early in the game will add a significant strength to your attack.
 
