@@ -25,13 +25,7 @@ The data was collected from https://www.ficsgames.org/download.html, where you c
 
 I created a custom parser to generate a csv file from the pgn file so that I can easily use them in the python notebook for some visualization and analysis.
 
-<<<<<<< HEAD
----
-
-***Here are some of the ideas that I wanted to verify with the statistical data.***
-=======
 ***Here are some of the ideas that I wanted to verify with statistics.***
->>>>>>> bda01a752f3087cded75c919ea7aa38d4690921e
 
 - Does moving certain types of pieces more often than others affect the winning rate?
     - is it better to move Queen early?
