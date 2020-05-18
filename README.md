@@ -11,6 +11,8 @@ in chess which make it difficult to figure out what move is best in a certain si
 
 So rather than trying to figure out what move is the best for the current game state, I wanted to understand what types of moves generally increase the winning probability.
 
+---
+
 ***At a higher level, this project consists of***
 
 1. Data Collection
@@ -22,6 +24,8 @@ So rather than trying to figure out what move is the best for the current game s
 The data was collected from https://www.ficsgames.org/download.html, where you can download the historical game data in pgn format.
 
 I created a custom parser to generate a csv file from the pgn file so that I can easily use them in the python notebook for some visualization and analysis.
+
+---
 
 ***Here are some of the ideas that I wanted to verify with the statistical data.***
 
@@ -37,6 +41,14 @@ I created a custom parser to generate a csv file from the pgn file so that I can
 - Does dominating the center of the board in the early game increase the chance of winning?
 - Does the activity of the elite pieces (K,B,R,Q) affect the winning rate?
 - etc
+
+---
+***Visualizations***
+![piece_usage_pdf](./assets/piece_usage_pdf.png)
+![piece_usage_pdf](./assets/moves_to_center.png)
+![piece_usage_pdf](./assets/queen_first_move.png)
+
+---
 
 ***Result***
 
