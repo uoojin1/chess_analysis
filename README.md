@@ -25,6 +25,8 @@ The data was collected from https://www.ficsgames.org/download.html, where you c
 
 I created a custom parser to generate a csv file from the pgn file so that I can easily use them in the python notebook for some visualization and analysis.
 
+---
+
 ***Here are some of the ideas that I wanted to verify with statistics.***
 
 - Does moving certain types of pieces more often than others affect the winning rate?
@@ -41,7 +43,9 @@ I created a custom parser to generate a csv file from the pgn file so that I can
 - etc
 
 ---
+
 ***Visualizations***
+
 ![piece_usage_pdf](./assets/piece_usage_pdf.png)
 ![piece_usage_pdf](./assets/moves_to_center.png)
 ![piece_usage_pdf](./assets/queen_first_move.png)
